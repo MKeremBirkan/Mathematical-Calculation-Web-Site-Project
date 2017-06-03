@@ -1,0 +1,76 @@
+<html><head><title>Hesap Makinasý</title></head>
+
+<script language="JavaScript">
+
+function top()
+{
+	a=eval(CT.bir.value);
+	b=eval(CT.iki.value);
+	c=a+b;
+	CT.son.value=c;
+}
+
+function carp()
+{
+	a=eval(CT.bir.value);
+	b=eval(CT.iki.value);
+	c=a*b;
+	CT.son.value=c;
+}
+
+function bol()
+{
+	a=eval(CT.bir.value);
+	b=eval(CT.iki.value);
+	c=a/b;
+	CT.son.value=c;
+}
+function cýk()
+{
+	a=eval(CT.bir.value);
+	b=eval(CT.iki.value);
+	c=a-b;
+	CT.son.value=c;
+}
+function mod()
+{
+	a=eval(CT.bir.value);
+	b=eval(CT.iki.value);
+	c=a%b;
+	CT.son.value=c;
+}
+
+</script>
+
+
+<body bgColor=silver>
+
+<center><h1><u><font color=blue>HESAP MAKINASI</font></u></h1></center>
+
+<form name=CT>
+
+<table border=0 align=center >
+
+	<tr><td><h2>Birinci Sayý  </h2></td><td><input type=text name=bir size=10></td></tr>
+
+	<tr><td><h2>Ýkinci Sayý  </h2></td><td><input type=text name=iki size=10></td></tr>
+
+	<tr><td><h2>Sonuc : </h2></td><td><input type=text name=son size=10></td></tr>
+	
+
+</table>
+<br>
+<table border=0 align=center >
+
+	<tr><td><input type=button value="  Toplama  " onclick=top()></td><td><input type=button value="Mod Alma" onclick=mod()></td>
+
+	<td><input type=button value="  Çarpma   " onclick=carp()></td><td><input type=button value="  Bölme     " onclick=bol()></td>
+
+	<td><input type=button value="  Çýkarma   " onclick=cýk()></td><td><input type=reset value="  Temizle  "></td></tr>
+</table>
+</form>
+
+</body>
+
+
+</html>
